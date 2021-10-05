@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+
+ 
+  
+  .wrapper{
+    position: absolute;
+    top: 16%;
+    left:95%;
+   
+    transform: translate(-50%,-50%);
+    background: #d0bbe5;
+    padding: 35px 15px 15px;
+    border-radius: 5px;
+  }
+  
+  .wrapper:before{
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 13px;
+    background: #b696d7;
+    border-radius: 50px;
+  }
+  
+  .wrapper:after{
+    content: "";
+    position: absolute;
+    top: -119px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 27px;
+    height: 132px;
+    background: #353535;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.125);
+  }
+  
+  .card-id{
+    width: 135px;
+    height: 185px;
+    background: #fff;
+    padding: 20px 20px 0;
+    position: relative;
+    border-radius: 5px;
+  }
+  
+  .card-id img{
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  
+  
+  
+  
+  
+  .card-id .info{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+  
+    padding: 20px;
+    background: #353535;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .card-id p{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+  }

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Cubano';
+  src: url(Cubano.ttf) format('truetype');
+}
+
+
+.App {
+  text-align: center;
+}

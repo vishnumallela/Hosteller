@@ -1,0 +1,38 @@
+.Login{
+    background-repeat: no-repeat;
+    background-size: 100vw 120vh;
+    background-image: url("https://static.wixstatic.com/media/9941e6_fda490dc3e4a41c58dfbc919f5f90017~mv2.gif");
+ 
+}
+.adminbtn:hover{
+
+outline: 1px solid blue;
+color:blue;
+}
+.open{
+
+    transition: all 0.3s ease-in;
+    transform: translateX(0%);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.close{
+transform: translateX(-100%);
+transition: all 0.2s ease-out;
+
+}
+.logo{
+  
+    position: absolute;
+    left: 50px;
+}
+.closebtn{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.sidenav{
+    border-top: 1px solid grey;
+    margin-top: 5px;
+}
+.sidenav>h1:hover{
+border-bottom: 1px solid blue;
+}

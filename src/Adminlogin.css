@@ -1,0 +1,36 @@
+.admincontainer{
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow:  -5px 5px 27px #969696;
+    height: 43vh;
+}
+.lgnbtn{
+  
+    padding: 9px 65px;
+    background-color: lightgreen;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    position: absolute;
+    left: 115px;
+    top: 102px;
+    transition: all 0.5s ease-out;
+
+
+}
+
+.lgnbtn:hover{
+  
+    background-color: yellow;
+
+
+}
+.lgnsvg{
+    transform: scale(1.5);
+}
+
+
+label{
+    display: inline-block;
+}
