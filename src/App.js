@@ -13,8 +13,9 @@ import Thankyou from './Thankyou'
 import Menu from './Menu'
 import Chat from './Chat'
 import Roomatefind from './Roomatefind'
-import { useDispatch,useSelector} from 'react-redux'
+import { useDispatch} from 'react-redux'
 import { login} from './redux/userSlice'
+import Userformedit from './Userformedit'
 
 
 function App() {
@@ -65,6 +66,7 @@ setuser("")
 <Route  path="/thankyou" component={Thankyou}/>
 <Route path="/chat" component={Chat}/>
 <Route path="/findroomate" component={Roomatefind}/>
+<Route path="/userformedit" component={Userformedit}/>
 </Switch>
   )}
 

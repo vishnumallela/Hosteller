@@ -11,6 +11,7 @@ import menu from './menu.svg'
 import chat from './chat.svg'
 import roomate from './roomate.svg'
 
+
 function Home() {
 
 
@@ -52,7 +53,7 @@ useEffect(() =>{
                     </div>
                     <div className="navitem" onClick={()=>history.push('/findroomate')} style={{width:"360px",height:'200px',overflow:'hidden',display:'flex',flexDirection:'column',alignItems: 'center',justifyContent: 'start'}}>
                         <img src={roomate} style={{objectFit:'contain',height:'170px',width:'55%',bottom:'10px'}}/>
-                        <p style={{position:'absolute' ,marginTop:'5px',color:'white'}}>FIND ROOMATE</p>
+                        <p style={{position:'absolute' ,marginTop:'5px',color:'white'}}>FIND ROOMMATE</p>
                     </div>
 
 

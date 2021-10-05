@@ -12,7 +12,7 @@ import {useHistory} from 'react-router-dom'
 import {RiSendPlaneFill} from 'react-icons/ri'
 import vit from'./vit.png'
 import ScrollAnimation from 'react-animate-on-scroll';
-
+import {useSelector} from 'react-redux';
 
 
 
@@ -23,7 +23,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 function Form() {
  
 const history = useHistory()
-
+const user= useSelector((state)=>state.roomuser.value)
 const[name,setname]=useState("")
 const[reg,setreg]=useState("")
 const[phone,setphone]=useState("")
@@ -93,7 +93,7 @@ await db.collection('CLEANERS').get().then((snapshot)=>{
 
 //  FORM ADD TO DATABASE //
 
-await db.collection('FORMDATA').add({NAME:name,REG:reg,PHONE:phone,BDETAILS:bdetails,DATE:d});
+await db.collection('FORMDATA').add({NAME:name,REG:reg,PHONE:phone,BDETAILS:bdetails,DATE:d,USER:user.uid,COMPLETED:false});
 
 // // SUCCESS NOTIFICATION //
 
@@ -126,7 +126,7 @@ setTimeout(()=>{history.push('/thankyuou')},4500)
 
     return (
 
-        <section>
+        <section className="mainsection">
             <ReactNotification/>
         <div className="credit-card-module">
           <div className="text-area-outer">
@@ -205,7 +205,7 @@ setTimeout(()=>{history.push('/thankyuou')},4500)
                </div>
            
         </div>
-    
+    <div style={{position:'absolute',right:'25px',top:'15px',}}><button onClick={()=>history.push('/userformedit')} style={{padding:'8px',borderRadius:'7px',cursor:'pointer'}}>SUBMIT CLEANING STATUS</button></div>
       </section>
     
     
