@@ -39,7 +39,7 @@ useEffect(() =>{
             <div className="back" style={{width:'100%',height:'94vh',backgroundColor:'black'}}>
                 <div className="homenav"  style={{width:'100%',height:'90vh',display:'flex',alignItems: 'center',justifyContent: 'center',flexDirection:'column'}}>
                     <div className="navitem"  onClick={()=>history.push('/roomcleaning')} style={{width:"360px",height:'200px',overflow:'hidden',display:'flex',flexDirection:'column',alignItems: 'center',justifyContent: 'start'}}>
-                        <img src={clean} style={{objectFit:'contain',height:'170px',width:'55%',bottom:'10px'}}/>
+                        <img src={clean} style={{objectFit:'contain',height:'130px',width:'55%',bottom:'10px',marginTop:'30px'}}/>
                         <p style={{position:'absolute' ,marginTop:'5px',color:'white'}}>ROOM CLEAN UP</p>
                     </div>
 
@@ -48,7 +48,7 @@ useEffect(() =>{
                         <p style={{position:'absolute' ,marginTop:'5px',color:'white'}}>FOOD MENU</p>
                     </div>
                     <div className="navitem" onClick={()=>history.push('/chat')} style={{width:"360px",height:'200px',overflow:'hidden',display:'flex',flexDirection:'column',alignItems: 'center',justifyContent: 'start'}}>
-                        <img src={chat} style={{objectFit:'contain',height:'170px',width:'55%',bottom:'10px'}}/>
+                        <img src={chat} style={{objectFit:'contain',height:'130px',width:'55%',bottom:'10px',marginTop:'30px'}}/>
                         <p style={{position:'absolute' ,marginTop:'5px',color:'white'}}>VIT CHAT</p>
                     </div>
                     <div className="navitem" onClick={()=>history.push('/findroomate')} style={{width:"360px",height:'200px',overflow:'hidden',display:'flex',flexDirection:'column',alignItems: 'center',justifyContent: 'start'}}>

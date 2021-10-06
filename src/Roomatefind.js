@@ -11,6 +11,7 @@ function Roomatefind() {
     const[checked,setchecked]=useState()
     const[list,setlist]=useState([])
     const[load,setload]=useState(false)
+
   
 
     useEffect(async () => {
@@ -38,7 +39,7 @@ const handleclick= async()=>{
             console.log("already clicked")
             localStorage.setItem('checked',false)
             var delete_query = db.collection('ROOMATEREQUEST').where('name','==',user.displayName);
-            delete_query.get().then(function(querySnapshot) {
+            await delete_query.get().then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
             doc.ref.delete();
           }); });
@@ -77,7 +78,7 @@ const handleclick= async()=>{
      
       {list?.map((item)=>{
         return (<>
-        <div style={{backgroundColor:"orange",height:"168px",width:"170px",borderRadius:"8px",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center"}}>
+        <div style={{backgroundColor:"orange",height:"168px",width:"170px",borderRadius:"8px",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",marginRight:'10px'}}>
           <h1 style={{fontSize:"16px",marginTop:"10px",color:"white",fontWeight:"500"}}>{item.name}</h1>
           <img src={item.photo} style={{objectFit:"contain",flex:1,height:"51px",width:"109px",borderRadius:"50p%"}}/>
 
