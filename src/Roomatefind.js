@@ -76,9 +76,9 @@ const handleclick= async()=>{
      </div>
      <div style={{width:"100%",height:"80vh",display:"flex",marginTop:'20px',padding:"10px"}}>
      
-      {list?.map((item)=>{
+      {list?.map((item,index)=>{
         return (<>
-        <div style={{backgroundColor:"orange",height:"168px",width:"170px",borderRadius:"8px",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",marginRight:'10px'}}>
+        <div key={index}style={{backgroundColor:"orange",height:"168px",width:"170px",borderRadius:"8px",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",marginRight:'10px'}}>
           <h1 style={{fontSize:"16px",marginTop:"10px",color:"white",fontWeight:"500"}}>{item.name}</h1>
           <img src={item.photo} style={{objectFit:"contain",flex:1,height:"51px",width:"109px",borderRadius:"50p%"}}/>
 

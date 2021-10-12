@@ -9,7 +9,7 @@ import UserReducer from'./userSlice'
 export const reduxstore = configureStore({
   reducer: {
    
-      roomuser:UserReducer,
+      user:UserReducer,
 
  },
 })
